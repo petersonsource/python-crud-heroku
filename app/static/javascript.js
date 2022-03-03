@@ -36,8 +36,9 @@
                 }
             }
             ajax.send(data);
-            form.reset();
+
         }
+        form.reset();
         form.addEventListener('submit', sendForm,false);
 
     }
