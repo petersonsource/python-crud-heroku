@@ -33,14 +33,14 @@
                     result.innerHTML = 'operação realizada com sucesso';
                     result.classList.add('alert');
                     result.classList.add('alert-success');
+                    form.reset();
+
                 }
             }
             ajax.send(data);
-
         }
-        form.reset();
-        form.addEventListener('submit', sendForm,false);
 
+        form.addEventListener('submit', sendForm,false);
     }
 
 })(window, document);
